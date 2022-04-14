@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 //challenge 1
-let uri = 'mongodb+srv://yayou-practice:Nomade75010!@cluster0.wcfsl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+let uri = process.env.DB;
 let mongoose = require('mongoose');
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
